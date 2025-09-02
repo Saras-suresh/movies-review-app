@@ -4,14 +4,14 @@ export default function Pagination({ currentPage, onPageChange }) {
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-4 py-2 bg-gray-300 rounded-lg disabled:opacity-50"
+        className="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded-lg disabled:opacity-50"
       >
         Prev
       </button>
-      <span className="px-4 py-2 bg-blue-600 text-white rounded-lg">{currentPage}</span>
+      <span className="px-4 py-2 bg-gray-400 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded-lg">{currentPage}</span>
       <button
         onClick={() => onPageChange(currentPage + 1)}
-        className="px-4 py-2 bg-gray-300 rounded-lg"
+        className="px-4 py-2 text-gray-900 dark:text-gray-100 rounded-lg"
       >
         Next
       </button>

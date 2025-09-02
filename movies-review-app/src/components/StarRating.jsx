@@ -39,7 +39,7 @@ export default function StarRating({ movieId }) {
         </span>
       ))}
       {rating > 0 && (
-          <span className="ml-2 text-sm">Your rating: {rating}/5</span>
+          <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">Your rating: {rating}/5</span>
         )}
     </div>
   );

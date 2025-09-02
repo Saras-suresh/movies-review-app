@@ -34,7 +34,7 @@ export default function Home() {
       <div className="flex-1 mt-6 w-full">
         {movies.length === 0 ? (
           <div className="flex justify-center items-center h-96">
-            <p className="text-gray-500 text-lg">No movies found</p>
+            <p className="text-gray-500 dark:text-gray-300 text-lg">No movies found</p>
           </div>
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 w-full">
